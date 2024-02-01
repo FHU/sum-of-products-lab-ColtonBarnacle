@@ -6,7 +6,7 @@ def multiply_and_sum(series1, series2):
 
     else:
         result = sum(x * y for x, y in zip(series1, series2))
-    return result
+        return result
 
 def main():
     series1_str = input("Enter the first series of integers: ")
