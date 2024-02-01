@@ -2,7 +2,7 @@
 #change to test push and forks
 def multiply_and_sum(series1, series2):
     if len(series1) != len(series2):
-        raise ValueError
+        print('error')
 
     result = sum(x * y for x, y in zip(series1, series2))
     return result
