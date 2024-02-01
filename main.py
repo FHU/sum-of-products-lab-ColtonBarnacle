@@ -2,7 +2,7 @@
 
 def multiply_and_sum(series1, series2):
     if len(series1) != len(series2):
-        return "Error"
+        return "Error: Lists must be the same length."
 
     else:
         result = sum(x * y for x, y in zip(series1, series2))
@@ -10,8 +10,8 @@ def multiply_and_sum(series1, series2):
 
 def main():
     # Input series from the user
-    series1 = [int(x) for x in input("Enter the first series of integers:").split()]
-    series2 = [int(x) for x in input("Enter the second series of integers: ").split()]
+    series1 = [int(x) for x in input().strip().split()]
+    series2 = [int(x) for x in input().strip().split()]
 
     # Calculate and display the result
     result = multiply_and_sum(series1, series2)
