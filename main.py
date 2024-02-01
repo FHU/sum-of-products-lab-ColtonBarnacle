@@ -1,5 +1,5 @@
 #REMOVE PASS AND FIX THE FUNCTION
-#change to test push and forks
+
 def multiply_and_sum(series1, series2):
     if len(series1) != len(series2):
         return "Error"
